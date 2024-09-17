@@ -1015,6 +1015,10 @@ video {
   background-image: url('../images/orange.jpg');
 }
 
+.bg-\[url\(\'\.\.\/images\/mixed\.jpg\'\)\] {
+  background-image: url('../images/mixed.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1317,6 +1321,11 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-red-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
