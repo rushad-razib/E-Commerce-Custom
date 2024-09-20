@@ -72,7 +72,7 @@
                     <h3 class="text-[15px] font-semibold">Browse Categories</h3>
                     <i class="fa-solid fa-chevron-down pl-12"></i>
                 </div>
-                <div class="cat-menu w-full h-[100px] bg-white absolute top-full left-0 hidden z-30" id="catdropdown">
+                <div class="cat-menu w-full bg-white absolute top-full left-0 hidden z-30" id="catdropdown">
                     <!-- Category Items List -->
                     <div class="flex group p-3 items-center border border-b-slate-300 justify-between">
                         <div class="flex items-center gap-x-2 cursor-pointer">
@@ -235,11 +235,12 @@
             </div>
             <div class="w-2/4 menu">
                 <ul class="flex space-x-5 justify-center items-center">
+                    <!-- Menu Items -->
                     <li class="relative font-semibold group capitalize inline-block"><a href="" class="text-[15px] text-black group-hover:text-[#5093F7]">home<i class="fa-solid fa-chevron-down pl-2 text-[12px]"></i></a>
-                        <div class="absolute h-[120px] w-[300px] left-0 top-full shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible first:pt-[100px] space-y-3">
-                            <div class="px-3 text-[14px] font-normal hover:text-[#5093F7]"><a href="">electronics & telemobile online shop</a></div>
-                            <div class="px-3 text-[14px] font-normal hover:text-[#5093F7]"><a href="">grocery shop</a></div>
-                            <div class="px-3 text-[14px] font-normal hover:text-[#5093F7]"><a href="">healthy diet food shop</a></div>
+                        <div class="absolute w-[300px] left-0 top-full shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible first:pt-[100px] space-y-3 py-4">
+                            <div class="px-3 bg-white text-[14px] font-normal hover:text-[#5093F7]"><a href="">electronics & telemobile online shop</a></div>
+                            <div class="px-3 bg-white text-[14px] font-normal hover:text-[#5093F7]"><a href="">grocery shop</a></div>
+                            <div class="px-3 bg-white text-[14px] font-normal hover:text-[#5093F7]"><a href="">healthy diet food shop</a></div>
                         </div>
                     </li>
                     <li class="font-semibold group capitalize inline-block"><a href="" class="text-[15px] text-black group-hover:text-[#5093F7]">pages<i class="fa-solid fa-chevron-down pl-2 text-[12px]"></i></a></li>
@@ -262,9 +263,9 @@
     <!-- Header End -->
     <!-- Banner Start -->
     <section id="banner" class="bg-[url('../images/banner.jpg')] bg-cover bg-center bg-no-repeat h-[80vh]">
-        <div class="max-w-container mx-auto py-8">
-            <div class="w-1/2 px-4 space-y-3 items-center pt-[120px]">
-                <div class="inline-flex gap-x-2 p-3 rounded-full bg-white group justify-items-start items-center">
+        <div class="max-w-container mx-auto py-8 h-[80vh] flex flex-col items-start justify-center">
+            <div class="w-1/2 px-4 space-y-3">
+                <div class="inline-flex gap-x-2 p-3 rounded-full bg-white group justify-start items-center">
                     <i class="fas fa-bolt text-[15px] text-[#FF4B55]"></i>
                     <h4 class="capitalize text-[15px] font-[500] text-[#FF4B55] inline-block">Buy one, get one 50% off</h4>
                 </div>
@@ -275,6 +276,49 @@
         </div>
     </section>
     <!-- Banner End -->
+
+    <!-- Category Carousel Start -->
+
+    <section id="catcarousel">
+        <div class="max-w-container mx-auto -mt-[50px]">
+            <div class="flex gap-x-5 justify-center items-center">
+                <!-- Carousel items -->
+                <div class="group gap-y-1 cursor-pointer flex flex-col items-center justify-center">
+                    <img src="../images/cereal.png" alt="" class="rounded-full border border-solid-1px border-teal-300 group-hover:border-[#4A8D16] transition-all duration-500 h-[130px]">
+                    <h3 class="capitalize text-16px font-[500] text-black group-hover:text-[#4A8D16]">Cereal and breakfast</h3>
+                    <p class="capitalize text-[13px] font-[400] text-[#57636C] group-hover:text-[#4A8D16]">22 Products</p>
+                </div>
+                <div class="group gap-y-1 cursor-pointer flex flex-col items-center justify-center">
+                    <img src="../images/cereal.png" alt="" class="rounded-full border border-solid-1px border-teal-300 group-hover:border-[#4A8D16] transition-all duration-500 h-[130px]">
+                    <h3 class="capitalize text-16px font-[500] text-black group-hover:text-[#4A8D16]">Cereal and breakfast</h3>
+                    <p class="capitalize text-[13px] font-[400] text-[#57636C] group-hover:text-[#4A8D16]">22 Products</p>
+                </div>
+                <div class="group gap-y-1 cursor-pointer flex flex-col items-center justify-center">
+                    <img src="../images/cereal.png" alt="" class="rounded-full border border-solid-1px border-teal-300 group-hover:border-[#4A8D16] transition-all duration-500 h-[130px]">
+                    <h3 class="capitalize text-16px font-[500] text-black group-hover:text-[#4A8D16]">Cereal and breakfast</h3>
+                    <p class="capitalize text-[13px] font-[400] text-[#57636C] group-hover:text-[#4A8D16]">22 Products</p>
+                </div>
+                <div class="group gap-y-1 cursor-pointer flex flex-col items-center justify-center">
+                    <img src="../images/cereal.png" alt="" class="rounded-full border border-solid-1px border-teal-300 group-hover:border-[#4A8D16] transition-all duration-500 h-[130px]">
+                    <h3 class="capitalize text-16px font-[500] text-black group-hover:text-[#4A8D16]">Cereal and breakfast</h3>
+                    <p class="capitalize text-[13px] font-[400] text-[#57636C] group-hover:text-[#4A8D16]">22 Products</p>
+                </div>
+                <div class="group gap-y-1 cursor-pointer flex flex-col items-center justify-center">
+                    <img src="../images/cereal.png" alt="" class="rounded-full border border-solid-1px border-teal-300 group-hover:border-[#4A8D16] transition-all duration-500 h-[130px]">
+                    <h3 class="capitalize text-16px font-[500] text-black group-hover:text-[#4A8D16]">Cereal and breakfast</h3>
+                    <p class="capitalize text-[13px] font-[400] text-[#57636C] group-hover:text-[#4A8D16]">22 Products</p>
+                </div>
+                <div class="group gap-y-1 cursor-pointer flex flex-col items-center justify-center">
+                    <img src="../images/cereal.png" alt="" class="rounded-full border border-solid-1px border-teal-300 group-hover:border-[#4A8D16] transition-all duration-500 h-[130px]">
+                    <h3 class="capitalize text-16px font-[500] text-black group-hover:text-[#4A8D16]">Cereal and breakfast</h3>
+                    <p class="capitalize text-[13px] font-[400] text-[#57636C] group-hover:text-[#4A8D16]">22 Products</p>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- Category Carousel End -->
+
     <!-- Ads Start -->
      <section id="ads ">
         <div class="max-w-container mx-auto py-[60px]">
@@ -283,20 +327,151 @@
                     <div class="p-[35px] content justify-center items-center">
                         <p class="font-normal text-[15px] text-white capitalize">todays deal</p>
                         <h3 class="font-[500] text-[24px] text-white capitalize pb-2">Natural Melon Juice</h3>
-                        <a href="#" class="hover:underline text-[14px] text-white font-semibold rounded-full group">Shop Now<i class="fas fa-external-link-alt text-white pl-2 group-hover:scale-150 transition-all duration-200"></i></a>
+                        <a href="#" class="relative after:absolute after:content-[''] after:left-0 after:-bottom-[4px] after:h-[2px] after:w-[0px] hover:after:w-full after:transition-all after:duration-500 after:bg-white text-[14px] text-white font-semibold rounded-full">Shop Now<i class="fas fa-external-link-alt text-white pl-2"></i></a>
                     </div>
                 </div>
                 <div class="w-1/2 bg-[url('../images/mixed.jpg')] bg-cover bg-center rounded min-h-[500px]">
                     <div class="p-[35px] content justify-center items-center">
                         <p class="font-normal text-[15px] text-black capitalize">todays deal</p>
                         <h3 class="font-[500] text-[24px] text-black capitalize pb-2">Natural Mixed juice</h3>
-                        <a href="#" class="hover:underline text-[14px] text-black font-semibold rounded-full group">Shop Now<i class="fas fa-external-link-alt text-black pl-2 group-hover:scale-150 transition-all duration-200"></i></a>
+                        <a href="#" class="relative after:absolute after:content-[''] after:left-0 after:-bottom-[4px] after:h-[2px] after:w-[0px] hover:after:w-full after:transition-all after:duration-500 after:bg-black text-[14px] text-black font-semibold rounded-full">Shop Now<i class="fas fa-external-link-alt text-black pl-2"></i></a>
                     </div>
                 </div>
             </div>
         </div>
      </section>
     <!-- Ads End -->
+
+     <!-- Featured Tabs Start -->
+
+     <section id="featured_tabs">
+        <div class="max-w-container mx-auto">
+            <div class="flex gap-x-12 justify-start items-center">
+                <h1 class="capitalize text-2xl font-[500] text-black">Today's specials: big savings</h1>
+                <div class="tabs">
+                    <ul class="flex space-x-4">
+                        <li class="inline-block cursor-pointer text-sm font-[500] text-[#57636C] px-4 py-2 bg-white border rounded-full border-teal-200 hover:bg-teal-400 hover:shadow-xl hover:text-white capitalize"><a href="#">All</a></li>
+                        <li class="inline-block cursor-pointer text-sm font-[500] text-[#57636C] px-4 py-2 bg-white border rounded-full border-teal-200 hover:bg-teal-400 hover:shadow-xl hover:text-white capitalize"><a href="#">Fresh Products</a></li>
+                        <li class="inline-block cursor-pointer text-sm font-[500] text-[#57636C] px-4 py-2 bg-white border rounded-full border-teal-200 hover:bg-teal-400 hover:shadow-xl hover:text-white capitalize"><a href="#">Whole grains</a></li>
+                        <li class="inline-block cursor-pointer text-sm font-[500] text-[#57636C] px-4 py-2 bg-white border rounded-full border-teal-200 hover:bg-teal-400 hover:shadow-xl hover:text-white capitalize"><a href="#">lean proteins</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content flex flex-row py-6">
+                <!-- Cards -->
+                <div class="w-1/4 card p-4 border flex-col bg-white border-teal-100 rounded space-y-3 hover:shadow-2xl  transition-all duration-400 hover:bg-white cursor-pointer">
+                    <div class="w-full height-[20%]">
+                        <img src="../images/fruits.jpg" height="100%" width="100%" alt="">
+                    </div>
+                    <h3 class="text-sm font-normal text-black hover:text-[#4A8D16] capitalize">Organic fruits & veggies supplement - support diet</h3>
+                    <div class="flex flex-row space-x-2 items-center">
+                        <div id="stars">
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                        </div>
+                        <p class="capitalize text-[13px] font-normal text-[#212529]">(35 reviews)</p>
+                    </div>
+                    <div class="flex flex-row justify-between items-center pt-5">
+                        <div class="flex flex-row space-x-1">
+                            <div class="new-price">$16</div>
+                            <div class="old-price line-through text-teal-600">$22</div>
+                        </div>
+                        <div class="stock flex flex-row items-center space-x-1">
+                            <i class="fas fa-check text-[#4A8D16]"></i>
+                            <h3 class="text-sm font-normal text-[#4A8D16] capitalize">in stock</h3>
+                        </div>
+                    </div>
+                    <a href="#" class="inline-block py-3 px-6 bg-[#4A8D16] text-[14px] text-white font-semibold capitalize hover:bg-green-700 rounded-full"><i class="fas fa-shopping-cart text-whtie pr-2"></i>Add to cart</a>
+                </div>
+                <div class="w-1/4 card p-4 border flex-col bg-white border-teal-100 rounded space-y-3 hover:shadow-2xl  transition-all duration-400 hover:bg-white cursor-pointer">
+                    <div class="w-full height-[20%]">
+                        <img src="../images/fruits.jpg" height="100%" width="100%" alt="">
+                    </div>
+                    <h3 class="text-sm font-normal text-black hover:text-[#4A8D16] capitalize">Organic fruits & veggies supplement - support diet</h3>
+                    <div class="flex flex-row space-x-2 items-center">
+                        <div id="stars">
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                        </div>
+                        <p class="capitalize text-[13px] font-normal text-[#212529]">(35 reviews)</p>
+                    </div>
+                    <div class="flex flex-row justify-between items-center pt-5">
+                        <div class="flex flex-row space-x-1">
+                            <div class="new-price">$16</div>
+                            <div class="old-price line-through text-teal-600">$22</div>
+                        </div>
+                        <div class="stock flex flex-row items-center space-x-1">
+                            <i class="fas fa-check text-[#4A8D16]"></i>
+                            <h3 class="text-sm font-normal text-[#4A8D16] capitalize">in stock</h3>
+                        </div>
+                    </div>
+                    <a href="#" class="inline-block py-3 px-6 bg-[#4A8D16] text-[14px] text-white font-semibold capitalize hover:bg-green-700 rounded-full"><i class="fas fa-shopping-cart text-whtie pr-2"></i>Add to cart</a>
+                </div>
+                <div class="w-1/4 card p-4 border flex-col bg-white border-teal-100 rounded space-y-3 hover:shadow-2xl  transition-all duration-400 hover:bg-white cursor-pointer">
+                    <div class="w-full height-[20%]">
+                        <img src="../images/fruits.jpg" height="100%" width="100%" alt="">
+                    </div>
+                    <h3 class="text-sm font-normal text-black hover:text-[#4A8D16] capitalize">Organic fruits & veggies supplement - support diet</h3>
+                    <div class="flex flex-row space-x-2 items-center">
+                        <div id="stars">
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                        </div>
+                        <p class="capitalize text-[13px] font-normal text-[#212529]">(35 reviews)</p>
+                    </div>
+                    <div class="flex flex-row justify-between items-center pt-5">
+                        <div class="flex flex-row space-x-1">
+                            <div class="new-price">$16</div>
+                            <div class="old-price line-through text-teal-600">$22</div>
+                        </div>
+                        <div class="stock flex flex-row items-center space-x-1">
+                            <i class="fas fa-check text-[#4A8D16]"></i>
+                            <h3 class="text-sm font-normal text-[#4A8D16] capitalize">in stock</h3>
+                        </div>
+                    </div>
+                    <a href="#" class="inline-block py-3 px-6 bg-[#4A8D16] text-[14px] text-white font-semibold capitalize hover:bg-green-700 rounded-full"><i class="fas fa-shopping-cart text-whtie pr-2"></i>Add to cart</a>
+                </div>
+                <div class="w-1/4 card p-4 border flex-col bg-white border-teal-100 rounded space-y-3 hover:shadow-2xl  transition-all duration-400 hover:bg-white cursor-pointer">
+                    <div class="w-full height-[20%]">
+                        <img src="../images/fruits.jpg" height="100%" width="100%" alt="">
+                    </div>
+                    <h3 class="text-sm font-normal text-black hover:text-[#4A8D16] capitalize">Organic fruits & veggies supplement - support diet</h3>
+                    <div class="flex flex-row space-x-2 items-center">
+                        <div id="stars">
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                        </div>
+                        <p class="capitalize text-[13px] font-normal text-[#212529]">(35 reviews)</p>
+                    </div>
+                    <div class="flex flex-row justify-between items-center pt-5">
+                        <div class="flex flex-row space-x-1">
+                            <div class="new-price">$16</div>
+                            <div class="old-price line-through text-teal-600">$22</div>
+                        </div>
+                        <div class="stock flex flex-row items-center space-x-1">
+                            <i class="fas fa-check text-[#4A8D16]"></i>
+                            <h3 class="text-sm font-normal text-[#4A8D16] capitalize">in stock</h3>
+                        </div>
+                    </div>
+                    <a href="#" class="inline-block py-3 px-6 bg-[#4A8D16] text-[14px] text-white font-semibold capitalize hover:bg-green-700 rounded-full"><i class="fas fa-shopping-cart text-whtie pr-2"></i>Add to cart</a>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- Featured Tabs End -->
 
 
     
