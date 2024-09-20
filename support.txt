@@ -6,3 +6,5 @@ one function for multiple assignments
 https://vue.envytheme.com/tuan/healthy-diet-foods-shop
 
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+
+https://rushad-razib.github.io/E-Commerce-Custom/src/
