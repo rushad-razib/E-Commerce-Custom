@@ -245,7 +245,7 @@
                         </div>
                     </li>
                     <li class="font-semibold group capitalize inline-block"><a href="" class="text-[15px] text-black group-hover:text-[#5093F7]">pages<i class="fa-solid fa-chevron-down pl-2 text-[12px]"></i></a></li>
-                    <li class="font-semibold group capitalize inline-block"><a href="" class="text-[15px] text-black group-hover:text-[#5093F7]">shop<i class="fa-solid fa-chevron-down pl-2 text-[12px]"></i></a></li>
+                    <li class="font-semibold group capitalize inline-block"><a href="shop.html" class="text-[15px] text-black group-hover:text-[#5093F7]">shop<i class="fa-solid fa-chevron-down pl-2 text-[12px]"></i></a></li>
                     <li class="font-semibold group capitalize inline-block"><a href="" class="text-[15px] text-black group-hover:text-[#5093F7]">blog<i class="fa-solid fa-chevron-down pl-2 text-[12px]"></i></a></li>
                     <li class="font-semibold group capitalize inline-block"><a href="" class="text-[15px] text-black group-hover:text-[#5093F7]">contact<i class="fa-solid fa-chevron-down pl-2 text-[12px]"></i></a></li>
                 </ul>
@@ -324,414 +324,62 @@
 
     </header>
     <!-- Header End -->
+
+
+    <!-- Body Start -->
     <!-- Breadcrumbs Start-->
     <section id="bread" class="pt-2">
         <div class="w-[90%] lg:max-w-container mx-auto justify-start">
             <ul class="flex space-x-2">
                 <li class="inline-block"><a href="index.html" class="text-base font-normal text-black hover:text-[#5093F7]">Home</a></li>
                 <li class="inline-block"><i class="fas fa-chevron-right text-[12px]"></i></li>
-                <li class="inline-block"><a href="" class="text-base font-normal text-black hover:text-[#5093F7]">Shop</a></li>
+                <li class="inline-block"><a href="" class="text-base font-normal text-black hover:text-[#5093F7]">login</a></li>
             </ul>
         </div>
     </section>
     <!-- Breadcrumbs End -->
-    <!-- Body Start -->
-    <section id="body" class="py-5 lg:py-20">
-        <div class="max-w-container mx-auto flex flex-col lg:flex-row gap-x-2 gap-y-2 lg:gap-y-0">
-            <div class="w-full lg:w-1/4 flex flex-col gap-y-5 px-2 lg:px-0">
-                <div class="flex flex-col gap-y-2">
-                    <h3 class="text-lg font-[500] text-black">Filter By Category</h3>
-                    <form action="/action_page.php" class="space-y-3 text-lg font-normal">
-                    <input type="radio" id="smartphone" name="filter_cat" value="HTML">
-                    <label for="smartphone">Smartphone & Tablets</label><br>
-                    <input type="radio" id="headphones" name="filter_cat" value="CSS">
-                    <label for="headphones">Headphones</label><br>
-                    <input type="radio" id="smartwatches" name="filter_cat" value="JavaScript">
-                    <label for="smartwatches">Smartwatches</label><br>
-                    <input type="radio" id="drone" name="filter_cat" value="JavaScript">
-                    <label for="drone">Drone & Camera</label><br>
-                    <input type="radio" id="javascript" name="filter_cat" value="JavaScript">
-                    <label for="javascript">Electronics</label><br>
-                    <input type="radio" id="javascript" name="filter_cat" value="JavaScript">
-                    <label for="javascript">Gaming Device</label><br>
-                    <input type="radio" id="javascript" name="filter_cat" value="JavaScript">
-                    <label for="javascript">Home Accesories</label><br>
-                    </form>
-                </div>
-                <div class="flex flex-col gap-y-2">
-                    <h3 class="text-lg font-[500] text-black">Filter By Brands</h3>
-                    <form action="/action_page.php" class="space-y-3 text-lg font-normal">
-                    <input type="radio" id="apple" name="filter_brand" value="HTML">
-                    <label for="apple">Apple</label><br>
-                    <input type="radio" id="samsung" name="filter_brand" value="CSS">
-                    <label for="samsung">Samsung</label><br>
-                    <input type="radio" id="motorola" name="filter_brand" value="JavaScript">
-                    <label for="motorola">Motorola</label><br>
-                    <input type="radio" id="microsoft" name="filter_brand" value="JavaScript">
-                    <label for="microsoft">Microsoft</label><br>
-                    <input type="radio" id="vivo" name="filter_brand" value="JavaScript">
-                    <label for="vivo">Vivo</label><br>
-                    </form>
-                </div>
+    <section id="login" class="py-3 lg:py-6">
+        <div class="w-4/5 lg:w-3/5 mx-auto flex justify-start border border-[#F4F0F1] rounded">
+            <div class="w-2/5 hidden lg:block">
+                <img src="../images/login.png" alt="" class="rounded-s h-full">
             </div>
-            <div class="w-full lg:w-3/4 flex flex-col">
-                <div class="w-full flex justify-between items-center px-2 lg:px-0">
-                    <h4 class="text-base font-normal text-black">Showing all 12 Items</h4>
-                    <div class="flex gap-x-2">
-                        <div class="flex gap-x-2 p-2 bg-teal-100 rounded">
-                            <h4 class="text-base font-normal text-black">Sort: </h4>
-                            <div class="text-black text-[14px] font-normal relative flex justify-between items-center select-none cursor-pointer" onclick="sort_prod()"><a href="">By Latest</a><i class="fas fa-angle-down pl-2"></i>
-                                <div class="text-black text-[14px] font-normal absolute top-full left-1/2 w-[130px] -translate-x-1/2 border-[1px] border-solid rounded mt-2 hidden z-10" id="drop_sort">
-                                    <div class="bg-white p-3 hover:text-white hover:bg-blue-700"><a href="">By Latest</a></div>
-                                    <div class="bg-white p-3 hover:text-white hover:bg-blue-700"><a href="">Recent</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="w-full lg:w-3/5 p-[25px] lg:p-[50px] flex-col space-y-4">
+                <div class="flex gap-x-5">
+                    <h3 class="py-2 px-3 bg-[#F7F7F7] rounded text-[22px] font-normal relative after:absolute after:content-'' after:h-1 after:w-full after:left-0 after:bottom-0 after:bg-red-500">Login</h3>
+                    <h3 class="py-2 px-3 rounded text-[22px] font-normal hover:bg-[#F7F7F7] relative after:absolute after:content-'' after:h-1 after:w-full after:left-0 after:bottom-0 after:bg-transparent hover:after:bg-red-500 transition-all duration-500"><a href="register.html">Register</a></h3>
                 </div>
-                <div class="flex flex-col md:flex-row px-2 lg:px-0 py-6 flex-wrap gap-x-0 lg:gap-x-0">
-                    <!-- Cards -->
-                    <div class="w-full md:w-1/3 lg:w-1/4 card p-4 border flex-col bg-white border-teal-100 rounded space-y-3 hover:shadow-2xl  transition-all duration-400 hover:bg-white cursor-pointer">
-                        <div class="w-full height-[20%]">
-                            <img src="../images/fruits.jpg" height="100%" width="100%" alt="">
+                <h3 class="text-base font-normal text-black">If you have an account, sign in with your username or email address.</h3>
+                <form action="" method="">
+                    <div class="flex flex-col">
+                        <div class="py-2 space-y-2">
+                            <label for="" class="block text-base font-normal text-black">Username or Email Address *</label>
+                            <input type="text" class="border rounded w-full px-4 py-2 focus:outline-none focus:ring-0 focus:border-gray-600" placeholder="Enter your user name">
                         </div>
-                        <h3 class="text-sm font-normal text-black hover:text-[#4A8D16] capitalize">Organic fruits & veggies supplement - support diet</h3>
-                        <div class="flex flex-col items-start space-x-2">
-                            <div id="stars">
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                            </div>
-                            <p class="capitalize text-[13px] font-normal text-[#212529]">(35 reviews)</p>
+                        <div class="py-2 space-y-2">
+                            <label for="" class="block text-base font-normal text-black">Your Password *</label>
+                            <input type="password" class="border rounded w-full px-4 py-2 focus:outline-none focus:ring-0 focus:border-gray-600" placeholder="Enter your password">
                         </div>
-                        <div class="flex flex-row justify-between items-center pt-5">
-                            <div class="flex flex-row space-x-1">
-                                <div class="new-price">$16</div>
-                                <div class="old-price line-through text-teal-600">$22</div>
+                        <div class="py-2 flex flex-col lg:flex-row justify-between">
+                            <div class="flex flex-row items-center gap-x-2">
+                                <input type="checkbox" id="remember" name="remember" value="Bike">
+                                <label for="remember" class="text-[#212529]">Remember</label>
                             </div>
-                            <div class="stock flex flex-row items-center space-x-1">
-                                <i class="fas fa-check text-[#4A8D16]"></i>
-                                <h3 class="text-sm font-normal text-[#4A8D16] capitalize">in stock</h3>
-                            </div>
+                            <h3 class="text-base font-normal text-blue-500 underline flex"><a href="">Lost Your Password?</a></h3>
                         </div>
-                        <a href="#" class="inline-block py-3 px-6 bg-[#4A8D16] text-[14px] text-white font-semibold capitalize hover:bg-green-700 rounded-full"><i class="fas fa-shopping-cart text-whtie pr-2"></i>Add to cart</a>
+                        <div class="py-2">
+                            <button type="submit" class="w-full rounded px-4 py-2 bg-[#F7931E] text-white teext-base font-semibold">Login</button>
+                        </div>
                     </div>
-                    <div class="w-full md:w-1/3 lg:w-1/4 card p-4 border flex-col bg-white border-teal-100 rounded space-y-3 hover:shadow-2xl  transition-all duration-400 hover:bg-white cursor-pointer">
-                        <div class="w-full height-[20%]">
-                            <img src="../images/fruits.jpg" height="100%" width="100%" alt="">
-                        </div>
-                        <h3 class="text-sm font-normal text-black hover:text-[#4A8D16] capitalize">Organic fruits & veggies supplement - support diet</h3>
-                        <div class="flex flex-col items-start space-x-2">
-                            <div id="stars">
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                            </div>
-                            <p class="capitalize text-[13px] font-normal text-[#212529]">(35 reviews)</p>
-                        </div>
-                        <div class="flex flex-row justify-between items-center pt-5">
-                            <div class="flex flex-row space-x-1">
-                                <div class="new-price">$16</div>
-                                <div class="old-price line-through text-teal-600">$22</div>
-                            </div>
-                            <div class="stock flex flex-row items-center space-x-1">
-                                <i class="fas fa-check text-[#4A8D16]"></i>
-                                <h3 class="text-sm font-normal text-[#4A8D16] capitalize">in stock</h3>
-                            </div>
-                        </div>
-                        <a href="#" class="inline-block py-3 px-6 bg-[#4A8D16] text-[14px] text-white font-semibold capitalize hover:bg-green-700 rounded-full"><i class="fas fa-shopping-cart text-whtie pr-2"></i>Add to cart</a>
-                    </div>
-                    <div class="w-full md:w-1/3 lg:w-1/4 card p-4 border flex-col bg-white border-teal-100 rounded space-y-3 hover:shadow-2xl  transition-all duration-400 hover:bg-white cursor-pointer">
-                        <div class="w-full height-[20%]">
-                            <img src="../images/fruits.jpg" height="100%" width="100%" alt="">
-                        </div>
-                        <h3 class="text-sm font-normal text-black hover:text-[#4A8D16] capitalize">Organic fruits & veggies supplement - support diet</h3>
-                        <div class="flex flex-col items-start space-x-2">
-                            <div id="stars">
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                            </div>
-                            <p class="capitalize text-[13px] font-normal text-[#212529]">(35 reviews)</p>
-                        </div>
-                        <div class="flex flex-row justify-between items-center pt-5">
-                            <div class="flex flex-row space-x-1">
-                                <div class="new-price">$16</div>
-                                <div class="old-price line-through text-teal-600">$22</div>
-                            </div>
-                            <div class="stock flex flex-row items-center space-x-1">
-                                <i class="fas fa-check text-[#4A8D16]"></i>
-                                <h3 class="text-sm font-normal text-[#4A8D16] capitalize">in stock</h3>
-                            </div>
-                        </div>
-                        <a href="#" class="inline-block py-3 px-6 bg-[#4A8D16] text-[14px] text-white font-semibold capitalize hover:bg-green-700 rounded-full"><i class="fas fa-shopping-cart text-whtie pr-2"></i>Add to cart</a>
-                    </div>
-                    <div class="w-full md:w-1/3 lg:w-1/4 card p-4 border flex-col bg-white border-teal-100 rounded space-y-3 hover:shadow-2xl  transition-all duration-400 hover:bg-white cursor-pointer">
-                        <div class="w-full height-[20%]">
-                            <img src="../images/fruits.jpg" height="100%" width="100%" alt="">
-                        </div>
-                        <h3 class="text-sm font-normal text-black hover:text-[#4A8D16] capitalize">Organic fruits & veggies supplement - support diet</h3>
-                        <div class="flex flex-col items-start space-x-2">
-                            <div id="stars">
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                            </div>
-                            <p class="capitalize text-[13px] font-normal text-[#212529]">(35 reviews)</p>
-                        </div>
-                        <div class="flex flex-row justify-between items-center pt-5">
-                            <div class="flex flex-row space-x-1">
-                                <div class="new-price">$16</div>
-                                <div class="old-price line-through text-teal-600">$22</div>
-                            </div>
-                            <div class="stock flex flex-row items-center space-x-1">
-                                <i class="fas fa-check text-[#4A8D16]"></i>
-                                <h3 class="text-sm font-normal text-[#4A8D16] capitalize">in stock</h3>
-                            </div>
-                        </div>
-                        <a href="#" class="inline-block py-3 px-6 bg-[#4A8D16] text-[14px] text-white font-semibold capitalize hover:bg-green-700 rounded-full"><i class="fas fa-shopping-cart text-whtie pr-2"></i>Add to cart</a>
-                    </div>
-                    <div class="w-full md:w-1/3 lg:w-1/4 card p-4 border flex-col bg-white border-teal-100 rounded space-y-3 hover:shadow-2xl  transition-all duration-400 hover:bg-white cursor-pointer">
-                        <div class="w-full height-[20%]">
-                            <img src="../images/fruits.jpg" height="100%" width="100%" alt="">
-                        </div>
-                        <h3 class="text-sm font-normal text-black hover:text-[#4A8D16] capitalize">Organic fruits & veggies supplement - support diet</h3>
-                        <div class="flex flex-col items-start space-x-2">
-                            <div id="stars">
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                            </div>
-                            <p class="capitalize text-[13px] font-normal text-[#212529]">(35 reviews)</p>
-                        </div>
-                        <div class="flex flex-row justify-between items-center pt-5">
-                            <div class="flex flex-row space-x-1">
-                                <div class="new-price">$16</div>
-                                <div class="old-price line-through text-teal-600">$22</div>
-                            </div>
-                            <div class="stock flex flex-row items-center space-x-1">
-                                <i class="fas fa-check text-[#4A8D16]"></i>
-                                <h3 class="text-sm font-normal text-[#4A8D16] capitalize">in stock</h3>
-                            </div>
-                        </div>
-                        <a href="#" class="inline-block py-3 px-6 bg-[#4A8D16] text-[14px] text-white font-semibold capitalize hover:bg-green-700 rounded-full"><i class="fas fa-shopping-cart text-whtie pr-2"></i>Add to cart</a>
-                    </div>
-                    <div class="w-full md:w-1/3 lg:w-1/4 card p-4 border flex-col bg-white border-teal-100 rounded space-y-3 hover:shadow-2xl  transition-all duration-400 hover:bg-white cursor-pointer">
-                        <div class="w-full height-[20%]">
-                            <img src="../images/fruits.jpg" height="100%" width="100%" alt="">
-                        </div>
-                        <h3 class="text-sm font-normal text-black hover:text-[#4A8D16] capitalize">Organic fruits & veggies supplement - support diet</h3>
-                        <div class="flex flex-col items-start space-x-2">
-                            <div id="stars">
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                            </div>
-                            <p class="capitalize text-[13px] font-normal text-[#212529]">(35 reviews)</p>
-                        </div>
-                        <div class="flex flex-row justify-between items-center pt-5">
-                            <div class="flex flex-row space-x-1">
-                                <div class="new-price">$16</div>
-                                <div class="old-price line-through text-teal-600">$22</div>
-                            </div>
-                            <div class="stock flex flex-row items-center space-x-1">
-                                <i class="fas fa-check text-[#4A8D16]"></i>
-                                <h3 class="text-sm font-normal text-[#4A8D16] capitalize">in stock</h3>
-                            </div>
-                        </div>
-                        <a href="#" class="inline-block py-3 px-6 bg-[#4A8D16] text-[14px] text-white font-semibold capitalize hover:bg-green-700 rounded-full"><i class="fas fa-shopping-cart text-whtie pr-2"></i>Add to cart</a>
-                    </div>
-                    <div class="w-full md:w-1/3 lg:w-1/4 card p-4 border flex-col bg-white border-teal-100 rounded space-y-3 hover:shadow-2xl  transition-all duration-400 hover:bg-white cursor-pointer">
-                        <div class="w-full height-[20%]">
-                            <img src="../images/fruits.jpg" height="100%" width="100%" alt="">
-                        </div>
-                        <h3 class="text-sm font-normal text-black hover:text-[#4A8D16] capitalize">Organic fruits & veggies supplement - support diet</h3>
-                        <div class="flex flex-col items-start space-x-2">
-                            <div id="stars">
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                            </div>
-                            <p class="capitalize text-[13px] font-normal text-[#212529]">(35 reviews)</p>
-                        </div>
-                        <div class="flex flex-row justify-between items-center pt-5">
-                            <div class="flex flex-row space-x-1">
-                                <div class="new-price">$16</div>
-                                <div class="old-price line-through text-teal-600">$22</div>
-                            </div>
-                            <div class="stock flex flex-row items-center space-x-1">
-                                <i class="fas fa-check text-[#4A8D16]"></i>
-                                <h3 class="text-sm font-normal text-[#4A8D16] capitalize">in stock</h3>
-                            </div>
-                        </div>
-                        <a href="#" class="inline-block py-3 px-6 bg-[#4A8D16] text-[14px] text-white font-semibold capitalize hover:bg-green-700 rounded-full"><i class="fas fa-shopping-cart text-whtie pr-2"></i>Add to cart</a>
-                    </div>
-                    <div class="w-full md:w-1/3 lg:w-1/4 card p-4 border flex-col bg-white border-teal-100 rounded space-y-3 hover:shadow-2xl  transition-all duration-400 hover:bg-white cursor-pointer">
-                        <div class="w-full height-[20%]">
-                            <img src="../images/fruits.jpg" height="100%" width="100%" alt="">
-                        </div>
-                        <h3 class="text-sm font-normal text-black hover:text-[#4A8D16] capitalize">Organic fruits & veggies supplement - support diet</h3>
-                        <div class="flex flex-col items-start space-x-2">
-                            <div id="stars">
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                            </div>
-                            <p class="capitalize text-[13px] font-normal text-[#212529]">(35 reviews)</p>
-                        </div>
-                        <div class="flex flex-row justify-between items-center pt-5">
-                            <div class="flex flex-row space-x-1">
-                                <div class="new-price">$16</div>
-                                <div class="old-price line-through text-teal-600">$22</div>
-                            </div>
-                            <div class="stock flex flex-row items-center space-x-1">
-                                <i class="fas fa-check text-[#4A8D16]"></i>
-                                <h3 class="text-sm font-normal text-[#4A8D16] capitalize">in stock</h3>
-                            </div>
-                        </div>
-                        <a href="#" class="inline-block py-3 px-6 bg-[#4A8D16] text-[14px] text-white font-semibold capitalize hover:bg-green-700 rounded-full"><i class="fas fa-shopping-cart text-whtie pr-2"></i>Add to cart</a>
-                    </div>
-                    <div class="w-full md:w-1/3 lg:w-1/4 card p-4 border flex-col bg-white border-teal-100 rounded space-y-3 hover:shadow-2xl  transition-all duration-400 hover:bg-white cursor-pointer">
-                        <div class="w-full height-[20%]">
-                            <img src="../images/fruits.jpg" height="100%" width="100%" alt="">
-                        </div>
-                        <h3 class="text-sm font-normal text-black hover:text-[#4A8D16] capitalize">Organic fruits & veggies supplement - support diet</h3>
-                        <div class="flex flex-col items-start space-x-2">
-                            <div id="stars">
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                            </div>
-                            <p class="capitalize text-[13px] font-normal text-[#212529]">(35 reviews)</p>
-                        </div>
-                        <div class="flex flex-row justify-between items-center pt-5">
-                            <div class="flex flex-row space-x-1">
-                                <div class="new-price">$16</div>
-                                <div class="old-price line-through text-teal-600">$22</div>
-                            </div>
-                            <div class="stock flex flex-row items-center space-x-1">
-                                <i class="fas fa-check text-[#4A8D16]"></i>
-                                <h3 class="text-sm font-normal text-[#4A8D16] capitalize">in stock</h3>
-                            </div>
-                        </div>
-                        <a href="#" class="inline-block py-3 px-6 bg-[#4A8D16] text-[14px] text-white font-semibold capitalize hover:bg-green-700 rounded-full"><i class="fas fa-shopping-cart text-whtie pr-2"></i>Add to cart</a>
-                    </div>
-                    <div class="w-full md:w-1/3 lg:w-1/4 card p-4 border flex-col bg-white border-teal-100 rounded space-y-3 hover:shadow-2xl  transition-all duration-400 hover:bg-white cursor-pointer">
-                        <div class="w-full height-[20%]">
-                            <img src="../images/fruits.jpg" height="100%" width="100%" alt="">
-                        </div>
-                        <h3 class="text-sm font-normal text-black hover:text-[#4A8D16] capitalize">Organic fruits & veggies supplement - support diet</h3>
-                        <div class="flex flex-col items-start space-x-2">
-                            <div id="stars">
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                            </div>
-                            <p class="capitalize text-[13px] font-normal text-[#212529]">(35 reviews)</p>
-                        </div>
-                        <div class="flex flex-row justify-between items-center pt-5">
-                            <div class="flex flex-row space-x-1">
-                                <div class="new-price">$16</div>
-                                <div class="old-price line-through text-teal-600">$22</div>
-                            </div>
-                            <div class="stock flex flex-row items-center space-x-1">
-                                <i class="fas fa-check text-[#4A8D16]"></i>
-                                <h3 class="text-sm font-normal text-[#4A8D16] capitalize">in stock</h3>
-                            </div>
-                        </div>
-                        <a href="#" class="inline-block py-3 px-6 bg-[#4A8D16] text-[14px] text-white font-semibold capitalize hover:bg-green-700 rounded-full"><i class="fas fa-shopping-cart text-whtie pr-2"></i>Add to cart</a>
-                    </div>
-                    <div class="w-full md:w-1/3 lg:w-1/4 card p-4 border flex-col bg-white border-teal-100 rounded space-y-3 hover:shadow-2xl  transition-all duration-400 hover:bg-white cursor-pointer">
-                        <div class="w-full height-[20%]">
-                            <img src="../images/fruits.jpg" height="100%" width="100%" alt="">
-                        </div>
-                        <h3 class="text-sm font-normal text-black hover:text-[#4A8D16] capitalize">Organic fruits & veggies supplement - support diet</h3>
-                        <div class="flex flex-col items-start space-x-2">
-                            <div id="stars">
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                            </div>
-                            <p class="capitalize text-[13px] font-normal text-[#212529]">(35 reviews)</p>
-                        </div>
-                        <div class="flex flex-row justify-between items-center pt-5">
-                            <div class="flex flex-row space-x-1">
-                                <div class="new-price">$16</div>
-                                <div class="old-price line-through text-teal-600">$22</div>
-                            </div>
-                            <div class="stock flex flex-row items-center space-x-1">
-                                <i class="fas fa-check text-[#4A8D16]"></i>
-                                <h3 class="text-sm font-normal text-[#4A8D16] capitalize">in stock</h3>
-                            </div>
-                        </div>
-                        <a href="#" class="inline-block py-3 px-6 bg-[#4A8D16] text-[14px] text-white font-semibold capitalize hover:bg-green-700 rounded-full"><i class="fas fa-shopping-cart text-whtie pr-2"></i>Add to cart</a>
-                    </div>
-                    <div class="w-full md:w-1/3 lg:w-1/4 card p-4 border flex-col bg-white border-teal-100 rounded space-y-3 hover:shadow-2xl  transition-all duration-400 hover:bg-white cursor-pointer">
-                        <div class="w-full height-[20%]">
-                            <img src="../images/fruits.jpg" height="100%" width="100%" alt="">
-                        </div>
-                        <h3 class="text-sm font-normal text-black hover:text-[#4A8D16] capitalize">Organic fruits & veggies supplement - support diet</h3>
-                        <div class="flex flex-col items-start space-x-2">
-                            <div id="stars">
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <i class="fas fa-star text-yellow-500"></i>
-                            </div>
-                            <p class="capitalize text-[13px] font-normal text-[#212529]">(35 reviews)</p>
-                        </div>
-                        <div class="flex flex-row justify-between items-center pt-5">
-                            <div class="flex flex-row space-x-1">
-                                <div class="new-price">$16</div>
-                                <div class="old-price line-through text-teal-600">$22</div>
-                            </div>
-                            <div class="stock flex flex-row items-center space-x-1">
-                                <i class="fas fa-check text-[#4A8D16]"></i>
-                                <h3 class="text-sm font-normal text-[#4A8D16] capitalize">in stock</h3>
-                            </div>
-                        </div>
-                        <a href="#" class="inline-block py-3 px-6 bg-[#4A8D16] text-[14px] text-white font-semibold capitalize hover:bg-green-700 rounded-full"><i class="fas fa-shopping-cart text-whtie pr-2"></i>Add to cart</a>
-                    </div>
-                    
-                </div>
-                <div class="w-full flex justify-center items-center">
-                    <ul class="flex space-x-4 items-center">
-                        <li class="px-4 py-2 bg-teal-100 hover:bg-blue-700 hover:text-white rounded-full transition-all duration-500"><a href=""><i class="fas fa-chevron-left"></i></a></li>
-                        <li><a href="">1</a></li>
-                        <li><a href="">2</a></li>
-                        <li><a href="">3</a></li>
-                        <li class="px-4 py-2 bg-teal-100 hover:bg-blue-700 hover:text-white rounded-full transition-all duration-500"><a href=""><i class="fas fa-chevron-right"></i></a></li>
-                    </ul>
+                </form>
+                <div class="flex gap-x-1">
+                    <h3 class="text-base font-normal">Don't have an account?</h3>
+                    <h3 class="text-base font-semibold text-blue-500"><a href="register.html">Register</a></h3>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Body End -->
-
-
 
 
     <!-- Footer Support Start -->
@@ -857,28 +505,20 @@
             </div>
         </div>
     </section>
-<!-- CopyWrite -->
+    <!-- CopyWrite -->
     <section id="CopyWrite" class="bg-white py-3 md:py-6 px-4 md:px-3 lg:px-0">
         <div class="max-w-container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-y-2">
             <h4 class="text-base font-normal text-[#57636C]">© Rushad. All Rights Reserved</h4>
             <img src="../images/payment.svg" alt="">
         </div>
     </section>
-<!--=========== Footer End ===========-->
+    <!--=========== Footer End ===========-->
 
 
 
 
     <script src="https://kit.fontawesome.com/c732b25177.js" crossorigin="anonymous"></script>
     <script>
-        function sort_prod(){
-            let dropdown = document.querySelector('#drop_sort');
-            drop_sort.classList.toggle('hidden');
-        }
-        function show_items(){
-            let dropdown = document.querySelector('#drop_show');
-            dropdown.classList.toggle('hidden');
-        }
         function langsel(){
             let dropdown = document.querySelector('#dropdown');
             dropdown.classList.toggle('hidden');
