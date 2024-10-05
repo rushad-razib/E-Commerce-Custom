@@ -33,48 +33,72 @@
                     </thead>
                     <tbody class="divide-y divide-gray-200">
                         <tr>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">1</td>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">
+                            <td class="w-1/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">1</td>
+                            <td class="w-2/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">
                                 <img src="../images/product-1.png">
                             </td>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">Multiplatform Wireless Noise-Cancelling Gaming Headset</td>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">79 BDT</td>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">Pending</td>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">79 BDT</td>
-                            <td class="text-base p-3 font-normal text-red-700 text-center whitespace-nowrap"><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                            <td class="w-2/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">Multiplatform Wireless Noise-Cancelling Gaming Headset</td>
+                            <td class="w-2/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">79 BDT</td>
+                            <td class="w-2/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">
+                                <div class="flex items-center justify-between px-4 py-2 bg-gray-100 border rounded-full cursor-pointer select-none">
+                                        <span class="minus">-</span>
+                                        <span class="px-2 quantity">1</span>
+                                        <span class="plus">+</span>
+                                </div>
+                            </td>
+                            <td class="w-2/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">79 BDT</td>
+                            <td class="w-1/12 text-base p-3 font-normal text-red-700 text-center whitespace-nowrap"><a href="#"><i class="fas fa-trash-alt"></i></a></td>
                         </tr>
                         <tr>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">2</td>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">
+                            <td class="w-1/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">2</td>
+                            <td class="w-2/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">
                                 <img src="../images/product-1.png">
                             </td>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">Multiplatform Wireless Noise-Cancelling Gaming Headset</td>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">79 BDT</td>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">Pending</td>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">79 BDT</td>
-                            <td class="text-base p-3 font-normal text-red-700 text-center whitespace-nowrap"><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                            <td class="w-2/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">Multiplatform Wireless Noise-Cancelling Gaming Headset</td>
+                            <td class="w-2/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">79 BDT</td>
+                            <td class="w-2/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">
+                                <div class="flex items-center justify-between px-4 py-2 bg-gray-100 border rounded-full cursor-pointer select-none">
+                                        <span class="minus">-</span>
+                                        <span class="px-2 quantity">1</span>
+                                        <span class="plus">+</span>
+                                </div>
+                            </td>
+                            <td class="w-2/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">79 BDT</td>
+                            <td class="w-1/12 text-base p-3 font-normal text-red-700 text-center whitespace-nowrap"><a href="#"><i class="fas fa-trash-alt"></i></a></td>
                         </tr>
                         <tr>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">3</td>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">
+                            <td class="w-1/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">3</td>
+                            <td class="w-2/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">
                                 <img src="../images/product-1.png">
                             </td>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">Multiplatform Wireless Noise-Cancelling Gaming Headset</td>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">79 BDT</td>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">Pending</td>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">79 BDT</td>
-                            <td class="text-base p-3 font-normal text-red-700 text-center whitespace-nowrap"><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                            <td class="w-2/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">Multiplatform Wireless Noise-Cancelling Gaming Headset</td>
+                            <td class="w-2/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">79 BDT</td>
+                            <td class="w-2/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">
+                                <div class="flex items-center justify-between px-4 py-2 bg-gray-100 border rounded-full cursor-pointer select-none">
+                                        <span class="minus">-</span>
+                                        <span class="px-2 quantity">1</span>
+                                        <span class="plus">+</span>
+                                </div>
+                            </td>
+                            <td class="w-2/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">79 BDT</td>
+                            <td class="w-1/12 text-base p-3 font-normal text-red-700 text-center whitespace-nowrap"><a href="#"><i class="fas fa-trash-alt"></i></a></td>
                         </tr>
                         <tr>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">4</td>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">
+                            <td class="w-1/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">4</td>
+                            <td class="w-2/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">
                                 <img src="../images/product-1.png">
                             </td>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">Multiplatform Wireless Noise-Cancelling Gaming Headset</td>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">79 BDT</td>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">Pending</td>
-                            <td class="text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">79 BDT</td>
-                            <td class="text-base p-3 font-normal text-red-700 text-center whitespace-nowrap"><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                            <td class="w-2/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">Multiplatform Wireless Noise-Cancelling Gaming Headset</td>
+                            <td class="w-2/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">79 BDT</td>
+                            <td class="w-2/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">
+                                <div class="flex items-center justify-between px-4 py-2 bg-gray-100 border rounded-full cursor-pointer select-none">
+                                        <span class="minus">-</span>
+                                        <span class="px-2 quantity">1</span>
+                                        <span class="plus">+</span>
+                                </div>
+                            </td>
+                            <td class="w-2/12 text-sm p-3 font-normal text-gray-700 text-center whitespace-nowrap">79 BDT</td>
+                            <td class="w-1/12 text-base p-3 font-normal text-red-700 text-center whitespace-nowrap"><a href="#"><i class="fas fa-trash-alt"></i></a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -84,6 +108,7 @@
 
 <!-- Cart Body End -->
 
+    
 
 <?php
     require 'footer.php'

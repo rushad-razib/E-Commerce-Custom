@@ -160,5 +160,28 @@
             close.classList.toggle('hidden');
         }
     </script>
+    <script>
+        const minus = document.querySelector('.minus'),
+        plus = document.querySelector('.plus'),
+        quantity = document.querySelector('.quantity');
+
+        let a = 1;
+        plus.addEventListener("click", ()=>{
+            a++;
+            a = (a < 10 ? "0" + a : a);
+            quantity.innerHTML = a;
+        });
+        minus.addEventListener("click", ()=>{
+            if(a > 1){
+                a--;
+            }
+            else{
+                return 0;
+            }
+            a = (a < 10 ? "0" + a : a);
+            quantity.innerHTML = a;
+        });
+    </script>
+    
 </body>
 </html>
