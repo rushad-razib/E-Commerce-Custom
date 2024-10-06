@@ -251,7 +251,7 @@
                             <div class="px-3 bg-white text-[14px] font-normal hover:text-[#5093F7]"><a href="shop.php">Shop Page</a></div>
                             <div class="px-3 bg-white text-[14px] font-normal hover:text-[#5093F7]"><a href="cart.php">Cart Page</a></div>
                             <div class="px-3 bg-white text-[14px] font-normal hover:text-[#5093F7]"><a href="checkout.php">Checkout</a></div>
-                            <div class="px-3 bg-white text-[14px] font-normal hover:text-[#5093F7]"><a href="product_landing">Product Details</a></div>
+                            <div class="px-3 bg-white text-[14px] font-normal hover:text-[#5093F7]"><a href="product.php">Product Details</a></div>
                         </div>
                     </li>
                     <li class="font-semibold group capitalize inline-block"><a href="" class="text-[15px] text-black group-hover:text-[#5093F7]">blog<i class="fa-solid fa-chevron-down pl-2 text-[12px]"></i></a></li>
