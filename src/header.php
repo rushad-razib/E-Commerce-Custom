@@ -247,11 +247,66 @@
                     </li>
                     <li class="font-semibold group capitalize inline-block"><a href="" class="text-[15px] text-black group-hover:text-[#5093F7]">pages<i class="fa-solid fa-chevron-down pl-2 text-[12px]"></i></a></li>
                     <li class="relative font-semibold group capitalize inline-block"><a href="" class="text-[15px] text-black group-hover:text-[#5093F7]">Shop<i class="fa-solid fa-chevron-down pl-2 text-[12px]"></i></a>
-                        <div class="absolute w-[150px] left-0 top-full shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible first:pt-[100px] space-y-3 py-4 bg-white">
-                            <div class="px-3 bg-white text-[14px] font-normal hover:text-[#5093F7]"><a href="shop.php">Shop Page</a></div>
-                            <div class="px-3 bg-white text-[14px] font-normal hover:text-[#5093F7]"><a href="cart.php">Cart Page</a></div>
-                            <div class="px-3 bg-white text-[14px] font-normal hover:text-[#5093F7]"><a href="checkout.php">Checkout</a></div>
-                            <div class="px-3 bg-white text-[14px] font-normal hover:text-[#5093F7]"><a href="product.php">Product Details</a></div>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 w-[400px] opacity-0 invisible group-hover:opacity-100 group-hover:visible shadow-xl rounded pt-4 px-5 bg-white">
+                            <div class="flex flex-row gap-x-2">
+                                <div class="flex flex-col px-2 py-4 gap-y-2">
+                                    <h1 class="text-base text-start font-semibold relative after:absolute after:content-'' after:left-0 after:top-full after:h-[1px] after:w-1/3 after:bg-blue-700 border-b-[1px] border-gray-400 px-2">Product Steps</h1>
+                                    <div class="flex flex-col space-y-2 pl-2 justify-center">
+                                        <div class="flex flex-row items-center gap-x-2 py-1 border-b-2 border-gray-100">
+                                            <i class="fas fa-square-full text-[5px]"></i>
+                                            <h4 class="text-sm font-[500]"><a href="shop.php" class="hover:text-blue-500 transition-all duration-500">Shop</a></h4>
+                                        </div>
+                                        <div class="flex flex-row items-center gap-x-2 py-1 border-b-2 border-gray-100">
+                                            <i class="fas fa-square-full text-[5px]"></i>
+                                            <h4 class="text-sm font-[500]"><a href="product.php" class="hover:text-blue-500 transition-all duration-500">Product</a></h4>
+                                        </div>
+                                        <div class="flex flex-row items-center gap-x-2 py-1 border-b-2 border-gray-100">
+                                            <i class="fas fa-square-full text-[5px]"></i>
+                                            <h4 class="text-sm font-[500]"><a href="cart.php" class="hover:text-blue-500 transition-all duration-500">Cart</a></h4>
+                                        </div>
+                                        <div class="flex flex-row items-center gap-x-2 py-1 border-b-2 border-gray-100">
+                                            <i class="fas fa-square-full text-[5px]"></i>
+                                            <h4 class="text-sm font-[500]"><a href="checkout.php" class="hover:text-blue-500 transition-all duration-500">Checkout</a></h4>
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="flex flex-col px-2 py-4 gap-y-2">
+                                    <h1 class="text-base text-start font-semibold relative after:absolute after:content-'' after:left-0 after:top-full after:h-[1px] after:w-1/3 after:bg-blue-700 border-b-[1px] border-gray-400 px-2">Admin</h1>
+                                    <div class="flex flex-col space-y-2 pl-2 justify-center">
+                                        <div class="flex flex-row items-center gap-x-2 py-1 border-b-2 border-gray-100">
+                                            <i class="fas fa-square-full text-[5px]"></i>
+                                            <h4 class="text-sm font-[500]"><a href="user_dashboard.php" class="hover:text-blue-500 transition-all duration-500">Dashboard</a></h4>
+                                        </div>
+                                        <div class="flex flex-row items-center gap-x-2 py-1 border-b-2 border-gray-100">
+                                            <i class="fas fa-square-full text-[5px]"></i>
+                                            <h4 class="text-sm font-[500]"><a href="product.php" class="hover:text-blue-500 transition-all duration-500">Edit Profile</a></h4>
+                                        </div>
+                                        <div class="flex flex-row items-center gap-x-2 py-1 border-b-2 border-gray-100">
+                                            <i class="fas fa-square-full text-[5px]"></i>
+                                            <h4 class="text-sm font-[500]"><a href="cart.php" class="hover:text-blue-500 transition-all duration-500">Order Details</a></h4>
+                                        </div>
+                                        <div class="flex flex-row items-center gap-x-2 py-1 border-b-2 border-gray-100">
+                                            <i class="fas fa-square-full text-[5px]"></i>
+                                            <h4 class="text-sm font-[500]"><a href="checkout.php" class="hover:text-blue-500 transition-all duration-500">Order History</a></h4>
+                                        </div>  
+                                        <div class="flex flex-row items-center gap-x-2 py-1 border-b-2 border-gray-100">
+                                            <i class="fas fa-square-full text-[5px]"></i>
+                                            <h4 class="text-sm font-[500]"><a href="checkout.php" class="hover:text-blue-500 transition-all duration-500">Log Out</a></h4>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="grid grid-cols-2">
+                                <div class="grid grid-rows-2 gap-y-2">
+                                    <h1 class="text-base font-semibold px-4 relative after:absolute after:content-'' after:left-0 after:top-full after:h-[1px] after:w-1/3 after:bg-blue-700 border-b-[1px] border-gray-400">Product Steps</h1>
+                                    <ul class="flex flex-col space-y-2">
+                                        <li class="text-sm font-normal"><a class="hover:text-blue-600 transition-all duration-400" href="shop.php">Shop</a></li>
+                                        <li class="text-sm font-normal"><a class="hover:text-blue-600 transition-all duration-400" href="product.php">Product Landing</a></li>
+                                        <li class="text-sm font-normal"><a class="hover:text-blue-600 transition-all duration-400" href="cart.php">Cart</a></li>
+                                        <li class="text-sm font-normal"><a class="hover:text-blue-600 transition-all duration-400" href="checkout.php">Checkout</a></li>
+                                    </ul>
+                                </div>
+                            </div> -->
                         </div>
                     </li>
                     <li class="font-semibold group capitalize inline-block"><a href="" class="text-[15px] text-black group-hover:text-[#5093F7]">blog<i class="fa-solid fa-chevron-down pl-2 text-[12px]"></i></a></li>
