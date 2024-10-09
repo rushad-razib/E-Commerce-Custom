@@ -55,7 +55,7 @@
                 <div class="w-full flex justify-between items-center px-2 lg:px-0 gap-x-2 lg:gap-x-0">
                     <div class="flex gap-x-1 px-4 py-2 border rounded items-center hover:shadow-lg cursor-pointer transition-all duration-300" onclick="filter_product()">
                         <i class="fas fa-filter text-[16px]"></i>
-                        <h4 class="text-base font-normal text-black">Filter</h4>
+                        <h4 class="text-base font-normal text-black" id="filter_show">Filter</h4>
                     </div>
                     <h4 class="text-base font-normal text-black">Showing 12 Items</h4>
                     <div class="flex gap-x-2">
@@ -411,6 +411,14 @@
         </div>
     </section>
     <!-- Body End -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $('#filter_show').click(function(){
+            let profile = document.getElementById('filter_prod');
+            profile.classList.toggle('hidden');
+        });
+    </script>
 
 <?php
     require 'footer.php';

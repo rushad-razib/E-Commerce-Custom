@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -9,21 +13,28 @@
 <body>
 
     <section id="admin_login" class="bg-gradient-to-t from-cyan-200 to-blue-500 h-[100vh] w-full">
-        <div class="w-5/6 lg:max-w-container mx-auto flex justify-center items-center h-full">
-            <div class="card flex flex-col bg-white p-4 lg:p-8 shadow-xl border rounded">
+        <div class="w-1/3 mx-auto flex justify-center items-center h-full">
+            <div class="w-full flex flex-col bg-white p-4 lg:p-8 shadow-xl border rounded">
                 <h3 class="text-lg font-bold text-center">Admin Panel</h3>
                 <h3 class="text-sm font-normal text-center pb-1">Enter Your Login Credentials</h3>
-                <form action="" method="POST"">
+                
+                <form action="login_post.php" method="POST"">
                     <div class="py-1">
                         <label for="name" class="text-base font-semibold">Admin Email</label>
-                        <input type="email" class="border rounded w-full my-2 px-4 py-2 focus:outline-none focus:ring-0 focus:border-gray-600" placeholder="Enter Email">
+                        <input type="email" name="email" class="border rounded w-full my-2 px-4 py-2 focus:outline-none focus:ring-0 focus:border-gray-600" placeholder="Enter Email">
+                        <?php if(isset($_SESSION['email_err'])){ ?>
+                            <strong class="text-sm font-semibold text-red-600"><?=$_SESSION['email_err']?></strong>
+                        <?php }unset($_SESSION['email_err']) ?>
                     </div>
                     <div class="py-1">
                         <label for="password" class="text-base font-semibold">Password</label>
                         <div class="relative my-2">
-                            <input type="password" class="border rounded w-full px-4 py-2 focus:outline-none focus:ring-0 focus:border-gray-600" placeholder="Enter Password">
+                            <input type="password" name="password" class="border rounded w-full px-4 py-2 focus:outline-none focus:ring-0 focus:border-gray-600" placeholder="Enter Password">
                             <i class="fas fa-eye p-[13px] rounded bg-blue-500 text-white absolute right-0 bottom-0"></i>
                         </div>
+                        <?php if(isset($_SESSION['password_err'])){ ?>
+                            <strong class="text-sm font-semibold text-red-600"><?=$_SESSION['password_err']?></strong>
+                        <?php }unset($_SESSION['password_err']) ?>
                     </div>
                     <div class="py-1">
                         <button type="submit" class="px-4 py-2 bg-blue-500 shadow-lg rounded text-white font-semibold w-full hover:bg-cyan-500 transition-all duration-300">Login</button>
