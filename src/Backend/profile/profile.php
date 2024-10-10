@@ -1,5 +1,6 @@
 <?php 
-require 'includes/header.php';
+require '../includes/header.php';
+require '../db.php';
 
 
 $select = "SELECT * FROM users where id='$id'";
@@ -15,29 +16,16 @@ $select_fetch_assoc = mysqli_fetch_assoc($select_query);
                     <div class="flex flex-col gap-y-1">
                         <label for="name" class="text-base font-semibold">User Name</label>
                         <input type="text" name="name" value="<?=$select_fetch_assoc['name']?>" class="border rounded w-full px-4 py-2 focus:outline-none focus:ring-0 focus:border-gray-600" placeholder="Enter Full Name">
-                        <?php if(isset($_SESSION['name_err'])){ ?>
-                            <strong class="text-red-500 font-semibold text-sm"><?=$_SESSION['name_err']?></strong>
-                        <?php }unset($_SESSION['name_err']) ?>
                     </div>
                     <div class="flex flex-col gap-y-1">
                         <label for="gender" class="text-base font-semibold block">Gender</label>
                         <div class="flex flex-row gap-x-4">
-                            <?php
-                                $gender = '';
-                                if(isset($_SESSION['gender'])){
-                                    $gender =  $_SESSION['gender'];
-                                }
-                                else{
-                                    $gender = '';
-                                }
-                                unset($_SESSION['gender']);
-                            ?>
                             <div>
-                            <input  <?=($gender=='male'?'checked':'')?> type="radio" id="male" name="gender" value="male">
+                            <input  <?=($select_fetch_assoc['gender']=='male'?'checked':'')?> type="radio" id="male" name="gender" value="male">
                             <label for="male">Male</label>
                             </div>
                             <div>
-                            <input <?=($gender=='female'?'checked':'')?> type="radio" id="female" name="gender" value="female">
+                            <input <?=($select_fetch_assoc['gender']=='female'?'checked':'')?> type="radio" id="female" name="gender" value="female">
                             <label for="female">female</label>
                             </div>
                         </div>
@@ -47,7 +35,7 @@ $select_fetch_assoc = mysqli_fetch_assoc($select_query);
                     </div>
                     <div class="flex flex-col gap-y-1">
                         <label for="photo" class="text-base font-semibold">Profile Image</label>
-                        <input type="file" name="photo" value="<?=(isset($_SESSION['photo'])?$_SESSION['name']:'')?>" class="px-4 py-2">
+                        <input type="file" name="photo" class="px-4 py-2">
                     </div>
                     <div class="flex flex-col gap-y-1">
                         <button type="submit" class="px-4 py-2 bg-blue-500 shadow-lg rounded text-white font-semibold w-full hover:bg-cyan-500 transition-all duration-300">Update</button>
@@ -58,4 +46,4 @@ $select_fetch_assoc = mysqli_fetch_assoc($select_query);
 </div>
 
 
-<?php require 'includes/footer.php' ?>
+<?php require '../includes/footer.php' ?>

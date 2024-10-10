@@ -1,12 +1,12 @@
 <?php
 session_start();
+require 'db.php';
 if(!isset($_SESSION['access'])){
     header('location:login.php');
 }
 else{
     $id = $_SESSION['access'];
 }
-require '../db.php';
 ?>
 <!doctype html>
 <html>
@@ -26,7 +26,7 @@ require '../db.php';
                         <h3 class="text-lg font-semibold hover:cursor-pointer px-4 py-2 hover:bg-gray-800 hover:text-white transition-all duration-300"><a href="/Ecommerce/src/backend/user_dashboard.php">Dashboard</a></h3>
                         <h3 class="text-lg font-semibold relative after:absolute after:content-'' after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-600">User Panel</h3>
                         <ul class="w-full">
-                            <li class="text-base font-semibold hover:cursor-pointer px-4 py-2 hover:bg-gray-800 hover:text-white transition-all duration-300 text-black "><a href="/Ecommerce/src/Backend/profile.php">Profile</a></li>
+                            <li class="text-base font-semibold hover:cursor-pointer px-4 py-2 hover:bg-gray-800 hover:text-white transition-all duration-300 text-black "><a href="/Ecommerce/src/Backend/profile/profile.php">Profile</a></li>
                         </ul>
                     </div>
             </div>
@@ -40,7 +40,7 @@ require '../db.php';
                             <div class="flex flex-col gap-y-2 py-4 px-4 shadow-xl bg-white absolute top-full right-0 min-h-[100px] min-w-[150px] hidden" id="profile_min">
                                 <img src="/Ecommerce/images/user.jpg" class="rounded-full p-2" alt="" class="p-2">
                                 <h3 class="text-base font-semibold relative after:absolute after:content-'' after:h-[1px] after:w-full after:bg-gray-200 after:-top-2 after:left-0"><a href="" class="text-black hover:text-blue-500">Profile Edit</a></h3>
-                                <h3 class="text-base font-semibold"><a href="" class="text-black hover:text-blue-500">Log Out</a></h3>
+                                <h3 class="text-base font-semibold"><a href="logout.php" class="text-black hover:text-blue-500">Log Out</a></h3>
                             </div>
                         </div>
                     </div>
