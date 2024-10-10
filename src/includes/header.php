@@ -275,7 +275,7 @@
                                     <div class="flex flex-col space-y-2 pl-2 justify-center">
                                         <div class="flex flex-row items-center gap-x-2 py-1 border-b-2 border-gray-100">
                                             <i class="fas fa-square-full text-[5px]"></i>
-                                            <h4 class="text-sm font-[500]"><a href="user_dashboard.php" class="hover:text-blue-500 transition-all duration-500">Dashboard</a></h4>
+                                            <h4 class="text-sm font-[500]"><a href="customer_dashboard.php" class="hover:text-blue-500 transition-all duration-500">Dashboard</a></h4>
                                         </div>
                                         <div class="flex flex-row items-center gap-x-2 py-1 border-b-2 border-gray-100">
                                             <i class="fas fa-square-full text-[5px]"></i>

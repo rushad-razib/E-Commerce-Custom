@@ -1,5 +1,5 @@
 <?php
-    require 'header.php';
+    require 'includes/header.php';
 ?>
     <!-- Breadcrumbs Start-->
     <section id="bread" class="pt-2">
@@ -421,5 +421,5 @@
     </script>
 
 <?php
-    require 'footer.php';
+    require 'includes/footer.php';
 ?>

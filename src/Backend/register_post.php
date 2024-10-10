@@ -28,7 +28,18 @@ if(empty($email)){
     $flag = true;
 }
 else{
-    $_SESSION['email'] = $email;
+    $select = "SELECT COUNT(*) as total FROM users where email = '$email'";
+    $select_query = mysqli_query($db_connect, $select);
+    $select_fetch = mysqli_fetch_assoc($select_query);
+
+    if($select_fetch['total'] != 0){
+        $_SESSION['email_err'] = 'Email Already Exists';
+        $flag = true;
+    }
+    else{
+        $_SESSION['email'] = $email;
+    }
+    
 }
 if(empty($email)){
     $_SESSION['gender_err'] = 'Please Select Your Gender';

@@ -1,4 +1,4 @@
-<?php require 'header.php' ?>
+<?php require 'includes/header.php' ?>
 
 <!-- Breadcrumbs Start -->
     <section id="bread" class="pt-2">
@@ -101,4 +101,4 @@
 
 <!-- Dashboard End -->
 
-<?php require 'footer.php' ?>
+<?php require 'includes/footer.php' ?>

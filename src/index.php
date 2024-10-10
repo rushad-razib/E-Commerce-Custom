@@ -1,5 +1,5 @@
 <?php
-    require 'header.php';
+    require 'includes/header.php';
 ?>
 
     <!-- First Ads Banner Start -->
@@ -383,5 +383,5 @@
 
     <!-- Subscribe Banner End -->
 <?php
-    require 'footer.php';
+    require 'includes/footer.php';
 ?>

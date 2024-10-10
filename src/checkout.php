@@ -1,5 +1,5 @@
 <?php
-    require 'header.php';
+    require 'includes/header.php';
 ?>
 
 <!-- Breadcrumbs Start -->
@@ -110,5 +110,5 @@
 <!-- Checkout End -->
 
 <?php
-    require 'footer.php';
+    require 'includes/footer.php';
 ?>

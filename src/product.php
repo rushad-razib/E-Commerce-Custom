@@ -1,5 +1,5 @@
 <?php
-    require 'header.php';
+    require 'includes/header.php';
 ?>
 
 <!-- Breadcrumbs Start -->
@@ -345,5 +345,5 @@
     });
 </script>
 <?php
-    require 'footer.php';
+    require 'includes/footer.php';
 ?>
