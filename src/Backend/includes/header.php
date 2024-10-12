@@ -1,11 +1,15 @@
 <?php
 session_start();
-require 'db.php';
+
 if(!isset($_SESSION['access'])){
     header('location:login.php');
 }
 else{
     $id = $_SESSION['access'];
+
+    $select = "SELECT * FROM users where id='$id'";
+    $select_query = mysqli_query($db_connect, $select);
+    $select_fetch_assoc = mysqli_fetch_assoc($select_query);
 }
 ?>
 <!doctype html>
@@ -13,7 +17,7 @@ else{
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../output.css" rel="stylesheet">
+  <link href="/Ecommerce/src/output.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -36,11 +40,16 @@ else{
                         <i class="fas fa-envelope p-2 rounded-full bg-gray-700 text-white hover:bg-white hover:shadow-xl hover:text-black transition-all duration-300"></i>
                         <i class="fas fa-bell p-2 rounded-full bg-gray-700 text-white hover:bg-white hover:shadow-xl hover:text-black transition-all duration-300"></i>
                         <div class="relative">
-                            <i class="fas fa-user p-2 rounded-full bg-gray-700 text-white hover:bg-white hover:shadow-xl hover:text-black transition-all duration-300" id="user_profile_focus"></i>
-                            <div class="flex flex-col gap-y-2 py-4 px-4 shadow-xl bg-white absolute top-full right-0 min-h-[100px] min-w-[150px] hidden" id="profile_min">
-                                <img src="/Ecommerce/images/user.jpg" class="rounded-full p-2" alt="" class="p-2">
+
+                            <?php if($select_fetch_assoc['photo'] == null){?>
+                                <i class="fas fa-user p-2 rounded-full bg-gray-700 text-white hover:bg-white hover:shadow-xl hover:text-black transition-all duration-300" id="user_profile_focus"></i>
+                            <?php }else{?>
+                                    <img src="../uploads/users/<?=$select_fetch_assoc['photo']?>" width="50" height="50" class="rounded-full p-2" id="user_profile_focus">
+                            <?php }?>
+                            <div class="flex flex-col justify-center gap-y-2 py-4 px-4 shadow-xl bg-white absolute top-full right-0 min-h-[100px] min-w-[150px] hidden" id="profile_min">
+                                <img src="../uploads/users/<?=$select_fetch_assoc['photo']?>" width="150" class="rounded-full p-2">
                                 <h3 class="text-base font-semibold relative after:absolute after:content-'' after:h-[1px] after:w-full after:bg-gray-200 after:-top-2 after:left-0"><a href="" class="text-black hover:text-blue-500">Profile Edit</a></h3>
-                                <h3 class="text-base font-semibold"><a href="logout.php" class="text-black hover:text-blue-500">Log Out</a></h3>
+                                <h3 class="text-base font-semibold"><a href="../logout.php" class="text-black hover:text-blue-500">Log Out</a></h3>
                             </div>
                         </div>
                     </div>

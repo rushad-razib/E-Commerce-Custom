@@ -68,7 +68,7 @@
         </div>
         <div class="border border-b-slate-300 border-t-0 border-r-0 border-l-0"></div>
         <div class="max-w-container mx-auto hidden lg:flex items-center">
-            <div class="w-1/4 relative">
+            <div class="w-1/4 relative h-[70px]">
                 <div class="cat-head flex items-center justify-center gap-x-3 px-4 py-6 bg-[#F7931E] text-white select-none" onclick="toggleCat()">
                     <i class="fa-solid fa-bars-staggered"></i>
                     <h3 class="text-[15px] font-semibold">Browse Categories</h3>
@@ -235,21 +235,36 @@
                     </div>
                 </div>
             </div>
-            <div class="w-2/4 menu">
-                <ul class="flex space-x-5 justify-center items-center">
+            <div class="w-2/4 menu h-[70px]">
+                <ul class="flex space-x-5 justify-center items-center h-full">
                     <!-- Menu Items -->
                     <li class="relative font-semibold group capitalize inline-block"><a href="" class="text-[15px] text-black group-hover:text-[#5093F7]">home<i class="fa-solid fa-chevron-down pl-2 text-[12px]"></i></a>
-                        <div class="absolute w-[300px] left-0 top-full shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible first:pt-[100px] space-y-3 py-4 bg-white">
-                            <div class="px-3 bg-white text-[14px] font-normal hover:text-[#5093F7]"><a href="">electronics & telemobile online shop</a></div>
-                            <div class="px-3 bg-white text-[14px] font-normal hover:text-[#5093F7]"><a href="">grocery shop</a></div>
-                            <div class="px-3 bg-white text-[14px] font-normal hover:text-[#5093F7]"><a href="">healthy diet food shop</a></div>
+                        <div class="absolute top-[50px] left-1/2 -translate-x-1/2 opacity-0 invisible group-hover:opacity-100 group-hover:visible shadow-xl rounded bg-white">
+                            <div class="flex flex-row gap-x-2 px-2">
+                            <div class="flex flex-col px-2 py-4 gap-y-2 w-[250px]">
+                                    <div class="flex flex-col space-y-2 pl-2 justify-center">
+                                        <div class="flex flex-row items-center gap-x-3 py-1 border-b-2 border-gray-100">
+                                            <i class="fas fa-square-full text-[5px]"></i>
+                                            <h4 class="text-sm font-[500]"><a href="product.php" class="hover:text-blue-500 transition-all duration-500">electronics & telemobile online shop</a></h4>
+                                        </div>
+                                        <div class="flex flex-row items-center gap-x-3 py-1 border-b-2 border-gray-100">
+                                            <i class="fas fa-square-full text-[5px]"></i>
+                                            <h4 class="text-sm font-[500]"><a href="product.php" class="hover:text-blue-500 transition-all duration-500">grocery shop</a></h4>
+                                        </div>
+                                        <div class="flex flex-row items-center gap-x-3 py-1 border-b-2 border-gray-100">
+                                            <i class="fas fa-square-full text-[5px]"></i>
+                                            <h4 class="text-sm font-[500]"><a href="cart.php" class="hover:text-blue-500 transition-all duration-500">healthy diet food shop</a></h4>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </li>
                     <li class="font-semibold group capitalize inline-block"><a href="" class="text-[15px] text-black group-hover:text-[#5093F7]">pages<i class="fa-solid fa-chevron-down pl-2 text-[12px]"></i></a></li>
                     <li class="relative font-semibold group capitalize inline-block"><a href="" class="text-[15px] text-black group-hover:text-[#5093F7]">Shop<i class="fa-solid fa-chevron-down pl-2 text-[12px]"></i></a>
-                        <div class="absolute top-full left-1/2 -translate-x-1/2 w-[400px] opacity-0 invisible group-hover:opacity-100 group-hover:visible shadow-xl rounded pt-4 px-5 bg-white">
-                            <div class="flex flex-row gap-x-2">
-                                <div class="flex flex-col px-2 py-4 gap-y-2">
+                        <div class="absolute top-[50px] left-1/2 -translate-x-1/2 opacity-0 invisible group-hover:opacity-100 group-hover:visible shadow-xl rounded bg-white">
+                            <div class="flex flex-row gap-x-2 px-2">
+                                <div class="flex flex-col px-2 py-4 gap-y-2 w-[150px]">
                                     <h1 class="text-base text-start font-semibold relative after:absolute after:content-'' after:left-0 after:top-full after:h-[1px] after:w-1/3 after:bg-blue-700 border-b-[1px] border-gray-400 px-2">Product Steps</h1>
                                     <div class="flex flex-col space-y-2 pl-2 justify-center">
                                         <div class="flex flex-row items-center gap-x-2 py-1 border-b-2 border-gray-100">
@@ -270,7 +285,7 @@
                                         </div>  
                                     </div>
                                 </div>
-                                <div class="flex flex-col px-2 py-4 gap-y-2">
+                                <div class="flex flex-col px-2 py-4 gap-y-2 w-[150px]">
                                     <h1 class="text-base text-start font-semibold relative after:absolute after:content-'' after:left-0 after:top-full after:h-[1px] after:w-1/3 after:bg-blue-700 border-b-[1px] border-gray-400 px-2">Admin</h1>
                                     <div class="flex flex-col space-y-2 pl-2 justify-center">
                                         <div class="flex flex-row items-center gap-x-2 py-1 border-b-2 border-gray-100">
@@ -296,24 +311,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="grid grid-cols-2">
-                                <div class="grid grid-rows-2 gap-y-2">
-                                    <h1 class="text-base font-semibold px-4 relative after:absolute after:content-'' after:left-0 after:top-full after:h-[1px] after:w-1/3 after:bg-blue-700 border-b-[1px] border-gray-400">Product Steps</h1>
-                                    <ul class="flex flex-col space-y-2">
-                                        <li class="text-sm font-normal"><a class="hover:text-blue-600 transition-all duration-400" href="shop.php">Shop</a></li>
-                                        <li class="text-sm font-normal"><a class="hover:text-blue-600 transition-all duration-400" href="product.php">Product Landing</a></li>
-                                        <li class="text-sm font-normal"><a class="hover:text-blue-600 transition-all duration-400" href="cart.php">Cart</a></li>
-                                        <li class="text-sm font-normal"><a class="hover:text-blue-600 transition-all duration-400" href="checkout.php">Checkout</a></li>
-                                    </ul>
-                                </div>
-                            </div> -->
                         </div>
                     </li>
                     <li class="font-semibold group capitalize inline-block"><a href="" class="text-[15px] text-black group-hover:text-[#5093F7]">blog<i class="fa-solid fa-chevron-down pl-2 text-[12px]"></i></a></li>
-                    <li class="font-semibold group capitalize inline-block"><a href="" class="text-[15px] text-black group-hover:text-[#5093F7]">contact<i class="fa-solid fa-chevron-down pl-2 text-[12px]"></i></a></li>
+                    <li class="items-center font-semibold group capitalize inline-block"><a href="" class="text-[15px] text-black group-hover:text-[#5093F7]">contact<i class="fa-solid fa-chevron-down pl-2 text-[12px]"></i></a></li>
                 </ul>
             </div>
-            <div class="w-1/4 location mx-auto">
+            <div class="w-1/4 location mx-auto h-[70px]">
                 <div class="flex gap-x-2 group items-center justify-end py-2 group cursor-pointer">
                     <i class="fas fa-map-marker-alt p-4 bg-teal-200 text-[#4A8D16] rounded-full group-hover:bg-[#4A8D16] group-hover:text-white transition-all duration-400"></i>
                     <div class="location-track items-center">
