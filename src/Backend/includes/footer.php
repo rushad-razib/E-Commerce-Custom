@@ -13,7 +13,7 @@
     <script>
         $('#user_profile_focus').click(function(){
             let profile = document.getElementById('profile_min');
-            profile.classList.toggle('hidden');
+            profile.classList.toggle('invisible');
         });
     </script>
 </body>

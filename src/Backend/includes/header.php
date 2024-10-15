@@ -30,7 +30,7 @@ else{
                         <h3 class="text-lg font-semibold hover:cursor-pointer px-4 py-2 hover:bg-gray-800 hover:text-white transition-all duration-300"><a href="/Ecommerce/src/backend/user_dashboard.php">Dashboard</a></h3>
                         <h3 class="text-lg font-semibold relative after:absolute after:content-'' after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-600">User Panel</h3>
                         <ul class="w-full">
-                            <li class="text-base font-semibold hover:cursor-pointer px-4 py-2 hover:bg-gray-800 hover:text-white transition-all duration-300 text-black "><a href="/Ecommerce/src/Backend/profile/profile.php">Profile</a></li>
+                            <li class="text-base font-semibold hover:cursor-pointer px-4 py-2 hover:bg-gray-800 hover:text-white transition-all duration-300 text-black "><a href="../profile/profile">Profile</a></li>
                         </ul>
                     </div>
             </div>
@@ -44,10 +44,10 @@ else{
                             <?php if($select_fetch_assoc['photo'] == null){?>
                                 <i class="fas fa-user p-2 rounded-full bg-gray-700 text-white hover:bg-white hover:shadow-xl hover:text-black transition-all duration-300" id="user_profile_focus"></i>
                             <?php }else{?>
-                                    <img src="../uploads/users/<?=$select_fetch_assoc['photo']?>" width="50" height="50" class="rounded-full p-2" id="user_profile_focus">
+                                    <img src="/Ecommerce/src/backend/uploads/users/<?=$select_fetch_assoc['photo']?>" width="50" height="50" class="rounded-full p-2" id="user_profile_focus">
                             <?php }?>
-                            <div class="flex flex-col justify-center gap-y-2 py-4 px-4 shadow-xl bg-white absolute top-full right-0 min-h-[100px] min-w-[150px] hidden" id="profile_min">
-                                <img src="../uploads/users/<?=$select_fetch_assoc['photo']?>" width="150" class="rounded-full p-2">
+                            <div class="flex flex-col justify-center gap-y-2 py-4 px-4 shadow-xl bg-white absolute top-full right-0 min-h-[100px] min-w-[150px] invisible z-10" id="profile_min">
+                                <img src="/Ecommerce/src/backend/uploads/users/<?=$select_fetch_assoc['photo']?>" width="150" class="rounded-full p-2">
                                 <h3 class="text-base font-semibold relative after:absolute after:content-'' after:h-[1px] after:w-full after:bg-gray-200 after:-top-2 after:left-0"><a href="" class="text-black hover:text-blue-500">Profile Edit</a></h3>
                                 <h3 class="text-base font-semibold"><a href="../logout.php" class="text-black hover:text-blue-500">Log Out</a></h3>
                             </div>

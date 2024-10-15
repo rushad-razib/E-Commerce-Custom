@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+  <link href="/Ecommerce/src/output.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body class="font-pop">    
@@ -37,7 +37,7 @@
         <div class="border border-b-slate-300 border-t-0 border-r-0 border-l-0"></div>
         <div class="head-mid py-3 flex-col lg:flex-row max-w-container mx-auto items-center flex-wrap hidden lg:flex">
             <div class="w-2/12 logo">
-                <img src="../images/logo.png" alt="logo">
+                <img src="/ecommerce/images/logo.png" alt="logo">
             </div>
             <div class="w-[90%] lg:w-5/12 searchbar relative">
                 <form action="" method="POST">
@@ -294,7 +294,7 @@
                                         </div>
                                         <div class="flex flex-row items-center gap-x-2 py-1 border-b-2 border-gray-100">
                                             <i class="fas fa-square-full text-[5px]"></i>
-                                            <h4 class="text-sm font-[500]"><a href="product.php" class="hover:text-blue-500 transition-all duration-500">Edit Profile</a></h4>
+                                            <h4 class="text-sm font-[500]"><a href="profile.php" class="hover:text-blue-500 transition-all duration-500">Edit Profile</a></h4>
                                         </div>
                                         <div class="flex flex-row items-center gap-x-2 py-1 border-b-2 border-gray-100">
                                             <i class="fas fa-square-full text-[5px]"></i>
